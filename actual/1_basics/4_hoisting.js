@@ -57,13 +57,13 @@ at the beginning of their scope
 
 // The typeof operator returns undefined for variables that have not
 // been declared, and no error is thrown in this case
-// console.log(typeof a); // Outputs: 'undefined'
+console.log(typeof a); // Outputs: 'undefined'
 
 // b is declared after you attempting to access.
 // In this case, b is hoisted within its scope but remains uninitialized,
 // placing it in the TDZ. Accessing a variable in the TDZ results in a ReferenceError
-// console.log(typeof b); // ReferenceError: Cannot access 'b' before initialization
-// let b = 3;
+console.log(typeof b); // ReferenceError: Cannot access 'b' before initialization
+let b = 3;
 
 let z = z + 1; // ReferenceError
 
