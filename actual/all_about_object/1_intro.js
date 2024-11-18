@@ -34,5 +34,7 @@ function PersonFunction(name, year) {
     );
   };
 }
+
+// new 없이 호출하면 this가 전역 객체를 참조하게 된다.
 const juho3 = new PersonFunction("juho", 1998);
 juho3.greet();
